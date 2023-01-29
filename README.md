@@ -18,10 +18,10 @@
 ![excluirAutor](https://user-images.githubusercontent.com/43977679/215362065-15e18d1f-3e6b-49e0-a6e5-e3b0fe899651.gif)
 
 ### Cadastro do Livro
-![cadastraLivro](https://user-images.githubusercontent.com/43977679/215362286-28e7ad69-e972-4c36-9751-a8dd9211d7c3.gif)
+![cadastrarLivro](https://user-images.githubusercontent.com/43977679/215362641-3e95b201-b8e2-4af6-ab05-74e8820646b1.gif)
 
 ### Edição do Livro
-![editarLivro](https://user-images.githubusercontent.com/43977679/215362315-abe19bfd-2051-4a7b-b0ea-b939205fd728.gif)
+![editarLivro](https://user-images.githubusercontent.com/43977679/215362667-ed25c361-da01-470d-a5f9-5a33c679dee9.gif)
 
 ### Exclusão do Livro
-![deletarLivro](https://user-images.githubusercontent.com/43977679/215362333-cce00697-5bb7-4f98-b195-b746048d2aa4.gif)
+![deletarLivro](https://user-images.githubusercontent.com/43977679/215362650-309be5ec-12b8-4dbd-91fb-76865a3598b6.gif)
