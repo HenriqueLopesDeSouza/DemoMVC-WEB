@@ -1,5 +1,4 @@
-﻿using DevIO.Business.Models.Validations.Documentos;
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace DevIO.Business.Models.Validations
 {

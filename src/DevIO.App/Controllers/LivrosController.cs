@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 using AutoMapper;
-using DevIO.App.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using DevIO.App.ViewModels;
 using DevIO.Business.Intefaces;
 using DevIO.Business.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 
 namespace DevIO.App.Controllers
 {
-    [Authorize]
     public class LivrosController : BaseController
     {
         private readonly ILivroRepository _livroRepository;
@@ -33,14 +29,14 @@ namespace DevIO.App.Controllers
             _livroService = livroService;
         }
 
-        [AllowAnonymous]
+
         [Route("lista-de-livros")]
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<LivroViewModel>>(await _livroRepository.ObterLivroAuthor()));
         }
 
-        [AllowAnonymous]
+
         [Route("dados-do-livros/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
@@ -54,7 +50,7 @@ namespace DevIO.App.Controllers
             return View(livroViewModel);
         }
 
-        [AllowAnonymous]
+
         [Route("novo-livro")]
         public async Task<IActionResult> Create()
         {
@@ -63,7 +59,7 @@ namespace DevIO.App.Controllers
             return View(livroViewModel);
         }
 
-        [AllowAnonymous]
+
         [Route("novo-livro")]
         [HttpPost]
         public async Task<IActionResult> Create(LivroViewModel livroViewModel)
@@ -85,7 +81,7 @@ namespace DevIO.App.Controllers
             return RedirectToAction("Index");
         }
 
-        [AllowAnonymous]
+
         [Route("editar-livro/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
@@ -99,7 +95,7 @@ namespace DevIO.App.Controllers
             return View(livroViewModel);
         }
 
-        [AllowAnonymous]
+
         [Route("editar-livro/{id:guid}")]
         [HttpPost]
         public async Task<IActionResult> Edit(Guid id, LivroViewModel livroViewModel)

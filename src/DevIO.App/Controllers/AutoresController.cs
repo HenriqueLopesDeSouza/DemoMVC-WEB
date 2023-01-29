@@ -27,14 +27,14 @@ namespace DevIO.App.Controllers
             _autorService = autorService;
         }
 
-        [AllowAnonymous]
+
         [Route("lista-de-autor")]
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<AutorViewModel>>(await _autorRepository.ObterTodos()));
         }
 
-        [AllowAnonymous]
+
         [Route("dados-do-autor/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
@@ -48,14 +48,14 @@ namespace DevIO.App.Controllers
             return View(autorViewModel);
         }
 
-        [AllowAnonymous]
+
         [Route("novo-autor")]
         public IActionResult Create()
         {
             return View();
         }
 
-        [AllowAnonymous]
+
         [Route("novo-autor")]
         [HttpPost]
         public async Task<IActionResult> Create(AutorViewModel autorViewModel)
@@ -70,7 +70,7 @@ namespace DevIO.App.Controllers
             return RedirectToAction("Index");
         }
 
-        [AllowAnonymous]
+
         [Route("editar-autor/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
@@ -84,7 +84,7 @@ namespace DevIO.App.Controllers
             return View(autorViewModel);
         }
 
-        [AllowAnonymous]
+
         [Route("editar-autor/{id:guid}")]
         [HttpPost]
         public async Task<IActionResult> Edit(Guid id, AutorViewModel autorViewModel)
@@ -101,7 +101,7 @@ namespace DevIO.App.Controllers
             return RedirectToAction("Index");
         }
 
-        [AllowAnonymous]
+
         [Route("excluir-autor/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
@@ -115,7 +115,7 @@ namespace DevIO.App.Controllers
             return View(autorViewModel);
         }
 
-        [AllowAnonymous]
+
         [Route("excluir-autor/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
@@ -131,7 +131,7 @@ namespace DevIO.App.Controllers
             return RedirectToAction("Index");
         }
 
-        [AllowAnonymous]
+
         [Route("obter-endereco-autor/{id:guid}")]
         public async Task<IActionResult> ObterEndereco(Guid id)
         {
@@ -145,7 +145,7 @@ namespace DevIO.App.Controllers
             return PartialView("_DetalhesEndereco", autor);
         }
 
-        [AllowAnonymous]
+
         [Route("atualizar-endereco-autor/{id:guid}")]
         public async Task<IActionResult> AtualizarEndereco(Guid id)
         {
@@ -159,7 +159,7 @@ namespace DevIO.App.Controllers
             return PartialView("_AtualizarEndereco", new AutorViewModel { Endereco = autor.Endereco });
         }
 
-        [AllowAnonymous]
+
         [Route("atualizar-endereco-autor/{id:guid}")]
         [HttpPost]
         public async Task<IActionResult> AtualizarEndereco(AutorViewModel autorViewModel)

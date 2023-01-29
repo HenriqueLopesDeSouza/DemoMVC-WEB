@@ -1,8 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using DevIO.Business.Models;
+﻿using DevIO.Business.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DevIO.Data.Context
@@ -19,10 +15,6 @@ namespace DevIO.Data.Context
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Autor> Autores { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Source=(localdb)\\MSSQLLocalDB;Database=BancoDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
