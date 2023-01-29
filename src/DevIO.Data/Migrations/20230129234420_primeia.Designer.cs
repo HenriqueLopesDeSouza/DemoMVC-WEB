@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DevIO.Data.Migrations
 {
     [DbContext(typeof(MeuDbContext))]
-    [Migration("20230129210830_MyFirstMigration")]
-    partial class MyFirstMigration
+    [Migration("20230129234420_primeia")]
+    partial class primeia
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

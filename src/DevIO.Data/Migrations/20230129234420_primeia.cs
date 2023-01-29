@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DevIO.Data.Migrations
 {
-    public partial class MyFirstMigration : Migration
+    public partial class primeia : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

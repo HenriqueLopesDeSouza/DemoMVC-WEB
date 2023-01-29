@@ -33,9 +33,6 @@
                 <td>
                     @this.FormataDocumento(item.Documento)
                 </td>
-                @*  <td>
-                    @Html.DisplayFor(modelItem => item.Ativo)
-                </td>*@
                 <td class="text-right">
                     <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam></a>
                     <a class="btn btn-warning"  asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
