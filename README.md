@@ -9,6 +9,7 @@
 ####      Add-Migration Primeira -Project DevIO.App -Context ApplicationDbContext
 ####      Update-Database -Project DevIO.App -Context ApplicationDbContext
 ####      Update-Database -Project DevIO.Data -Context MeuDbContext 
+#### 3 - Execute
 
 ### Cadastro pelo Identity
 ![cadastro](https://user-images.githubusercontent.com/43977679/215362167-d6b212d6-7e91-4211-9e93-2e4fbd2d42fd.gif)
