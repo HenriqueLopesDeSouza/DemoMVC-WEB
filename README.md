@@ -2,6 +2,14 @@
 ## projeto utlizando asp.net web,jquery, entity framewrok e o Identity 
 ## funcionalidades de cadastro de Autor, endereço do autor e livros do Autor
 
+### Como rodar 
+#### 1 - Baixe o projeto 
+#### 2 - No Package Manager Console - 
+####      Add-Migration Primeira -Project DevIO.Data -Context MeuDbContext 
+####      Add-Migration Primeira -Project DevIO.App -Context ApplicationDbContext
+####      Update-Database -Project DevIO.App -Context ApplicationDbContext
+####      Update-Database -Project DevIO.Data -Context MeuDbContext 
+
 ### Cadastro pelo Identity
 ![cadastro](https://user-images.githubusercontent.com/43977679/215362167-d6b212d6-7e91-4211-9e93-2e4fbd2d42fd.gif)
 
